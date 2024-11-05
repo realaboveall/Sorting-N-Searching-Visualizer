@@ -1,29 +1,26 @@
-# Sorting and Searching Visualizer
-Help you understand sorting and searching algorithms more easily. As well as conducting simulations to learn the patterns of each algorithm.
-* Pick the size of array and speed of process!
-* Auto generate random array!
-* See how long the time of execution and big-O notation
+# Sorting algorithm visualizer
 
-Can be used to teach CS students.
+This web application is built using HTML, CSS, and Javascript to visualize classic sorting algorithms. (Yes, we have decided what the classics are😭😭.)
 
-## Sorting Visualizer
-Sorting Algorithm :<br>
-1. Bubble Sort<br>
-2. Selection Sort<br>
-3. Merge Sort<br>
-4. Insertion Sort<br>
-5. Quick Sort<br>
+**Live-** [sorting visualizer](https://realaboveall.github.io/) 
 
-## Searching Visualizer
-Searching Algorithm :<br>
-1. Linear Search<br>
-2. Binary Search<br>
+**Code-** [sort visualizer code]()
 
-## How it looks?
-Sorting visualizer :<br>
-<img src="img/ss1.png"><br><br>
-Searching visualizer :<br>
-<img src="img/ss2.png"><br>
+## Purpose
 
-## Still in development:)
-Adding more algorithm!
+Our Sorting Algorithm Visualizer is an interactive tool designed to help users understand and visualize various sorting algorithms. By representing data as colorful geometric shapes, this visualizer demonstrates how different algorithms organize data, allowing users to see the processes in action.
+
+## This application supports the following sorting algorithms:
+
+1. **Bubble Sort**.
+2. **Insertion Sort**.
+3. **Selection Sort**.
+4. **Merge Sort**.
+5. **Quick Sort**.
+
+## And the following searching Algorithms:
+
+1. **Linear Search**.
+2. **Binary Search**.
+
+We will add more in the future, maybe
