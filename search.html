@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Sorting and Searching Visualizer</title>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="header">
+			<h1 class="hed">Sorting and Searching Visualizer</h1>
+			<img src="images/moon.png" alt="Dark Mode" id="icon">
+		</div>
+		<div class="pages">
+			<a href="index.html">Sorting</a>
+			<a href="search.html">Searching</a>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="menu">
+			<button id="new_arr">Generate Array</button>
+			<div class="input_range">
+				<div class="size">
+					<input type="range" id="arr_size" min="5" max="100" step="1" value="60" orient="vertical">
+					<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+						clip-rule="evenodd">
+						<path
+							d="M0 22h1v-5h4v5h2v-10h4v10h2v-15h4v15h2v-21h4v21h1v1h-24v-1zm4-4h-2v4h2v-4zm6-5h-2v9h2v-9zm6-5h-2v14h2v-14zm6-6h-2v20h2v-20z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="visual">
+			<div class="wrap_container">
+				<div class="algo_name">
+					<p id="algo">Searching</p>
+				</div>
+				<div class="container"></div>
+			</div>
+			<div class="time">
+				<div class="exectime">
+					<p>Time of Execution :</p>
+					<p id="timeExec">-</p>
+				</div>
+				<div class="asimtotic">
+					<p>Big-O Notation :</p>
+					<p id="notation">-</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="options">
+			<div class="option_text">
+				<p>Searching Algorithm</p>
+				<span>Choose a bar to search</span>
+			</div>
+			<button class="linearSearch">Linear Search</button>
+			<button class="binarySearch">Binary Search</button>
+			<button class="binarySearch">More Soon....</button>
+		</div>
+	</div>
+	<footer class="footer">
+        <p id="ftrtxt">Created with <i class="fa fa-heart"></i> by AboveAll</p>
+      </footer>
+	  <script>var icon = document.getElementById("icon");
+		icon.onclick = function(){
+		  document.body.classList.toggle("dark-theme");
+			if (document.body.classList.contains("dark-theme")){
+			  icon.src = "images/sun.png";
+			  
+			}
+			else{
+			  icon.src="images/moon.png";
+			}
+		}</script>
+	<script src="search/script_search.js"></script>
+	<script src="search/linear_search.js"></script>
+	<script src="search/binary_search.js"></script>
+</body>
+
+</html>
