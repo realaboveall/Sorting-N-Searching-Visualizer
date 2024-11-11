@@ -75,11 +75,11 @@ body {
 
 a {
   text-align: center;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   font-size: 1.3em;
   font-weight: bold;
   width: 200px;
-  color: white;
+  color: var(--text-color);
   padding: 10px;
   text-decoration: none;
   border-radius: 10px;

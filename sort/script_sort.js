@@ -46,7 +46,7 @@ function createArray(n) {
     const bar = document.createElement("div");
     bar.style.height = `${array[i] * 2}px`;
     bar.classList.add("bar");
-    bar.innerHTML = `<p>${Math.floor(`${array[i] * 2}`)}</p>`
+    bar.innerText = `${Math.floor(` ${array[i] * 2} `)}`
     bars.appendChild(bar);
   }
 }
@@ -58,9 +58,13 @@ function clearBar() {
 }
 
 function swap(bar1, bar2) {
+  const a = bar1.innerText
+  const b = bar2.innerText
   let temp = bar1.style.height;
   bar1.style.height = bar2.style.height;
+  bar1.innerText = b;
   bar2.style.height = temp;
+  bar2.innerText = a;
 }
 
 
