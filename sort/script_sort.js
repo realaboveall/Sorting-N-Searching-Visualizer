@@ -46,7 +46,7 @@ function createArray(n) {
     const bar = document.createElement("div");
     bar.style.height = `${array[i] * 2}px`;
     bar.classList.add("bar");
-    bar.innerHTML = `<p>${Math.floor(array[i]*2)}</p>`
+    bar.innerHTML = `<p>${Math.floor(`${array[i] * 2}`)}</p>`
     bars.appendChild(bar);
   }
 }
