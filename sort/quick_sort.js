@@ -1,6 +1,6 @@
 async function partition(ele, l, r) {
   let i = l - 1;
-  ele[r].style.background = "red";
+  ele[r].style.background = "white";
   for (let j = l; j <= r - 1; j++) {
     ele[j].style.background = "yellow";
     await waitforme(delay);
@@ -8,8 +8,8 @@ async function partition(ele, l, r) {
     if (parseFloat(ele[j].style.height) < parseFloat(ele[r].style.height)) {
       i++;
       swap(ele[i], ele[j]);
-      ele[i].style.background = "blue";
-      if (i != j) ele[j].style.background = "blue";
+      ele[i].style.background = "white";
+      if (i != j) ele[j].style.background = "white";
       await waitforme(delay);
     } else {
       ele[j].style.background = "orange";
