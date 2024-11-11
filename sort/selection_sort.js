@@ -11,18 +11,18 @@ async function selectionSort() {
         parseFloat(bar[min_index].style.height)
       ) {
         if (min_index !== i) {
-          bar[min_index].style.background = "red";
+          bar[min_index].style.background = "#F7FBFC";
         }
         min_index = j;
       } else {
-        bar[j].style.background = "red";
+        bar[j].style.background = "#F7FBFC";
       }
       playNote(300 + array[j] * 2);
       playNote(300 + array[j] * 2);
     }
     await waitforme(delay);
     swap(bar[min_index], bar[i]);
-    bar[min_index].style.background = "red";
+    bar[min_index].style.background = "#F7FBFC";
     bar[i].style.background = "green";
   }
 }

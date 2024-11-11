@@ -14,7 +14,7 @@ async function merge(bar, low, mid, high) {
   }
   for (let i = 0; i < n2; i++) {
     await waitforme(delay);
-    bar[mid + 1 + i].style.background = "blue";
+    bar[mid + 1 + i].style.background = "lightblue";
     right[i] = bar[mid + 1 + i].style.height;
     playNote(300 + array[i] * 2);
     playNote(300 + array[i] * 2);

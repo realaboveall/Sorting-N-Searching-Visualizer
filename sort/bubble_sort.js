@@ -2,8 +2,8 @@ async function bubbleSort() {
   const bar = document.querySelectorAll(".bar");
   for (let i = 0; i < bar.length - 1; i++) {
     for (let j = 0; j < bar.length - i - 1; j++) {
-      bar[j].style.background = "green";
-      bar[j + 1].style.background = "green";
+      bar[j].style.background = "lightgreen"; //active bars
+      bar[j + 1].style.background = "lightgreen";
       if (
         parseFloat(bar[j].style.height) >= parseFloat(bar[j + 1].style.height)
       ) {
