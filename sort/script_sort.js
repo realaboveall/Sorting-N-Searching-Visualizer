@@ -90,13 +90,13 @@ delayElement.addEventListener("input", function () {
 });
 
 
-createArray(15);
+createArray(20);
 
 const newArray = document.querySelector("#new_arr");
 newArray.addEventListener("click", function () {
   enableSort();
   enableSize();
-  createArray(15);
+  createArray(20);
 });
 
 function disableSort() {

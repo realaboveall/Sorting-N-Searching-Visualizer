@@ -41,6 +41,7 @@ function createArray(n = 30) {
     bar.style.height = `${array[i] * 2}px`;
     bar.classList.add("bar");
     bar.setAttribute("id", i);
+    bar.innerText = `${Math.floor(` ${array[i] * 2} `)}`
     bars.appendChild(bar);
   }
   bar = document.querySelectorAll(".bar");
@@ -66,19 +67,19 @@ function waitforme(milisec) {
 // size
 let size = document.querySelector("#arr_size");
 size.addEventListener("input", function () {
-  createArray(parseInt(size.value));
+  createArray(30);
 });
 
 // delay 200ms
 let delay = 200;
 
-createArray();
+createArray(25);
 
 const newArray = document.querySelector("#new_arr");
 newArray.addEventListener("click", function () {
   enableSearch();
   enableSize();
-  createArray(size.value);
+  createArray(25);
 });
 
 function disableSearch() {

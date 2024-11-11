@@ -1,6 +1,6 @@
 async function binarySearch() {
   const bar = document.querySelectorAll(".bar");
-  selectedBar.style.background = "black";
+  selectedBar.style.background = "red";
 
   for (let i = 0; i < bar.length - 1; i++) {
     for (let j = 0; j < bar.length - i - 1; j++) {
@@ -35,19 +35,19 @@ async function binarySearch() {
     playNote(400 + array[mid] * 2);
     bar[mid].style.background = "green";
     if (parseFloat(bar[mid].style.height) == targetValue) {
-      bar[start].style.background = "black";
-      bar[end].style.background = "black";
+      bar[start].style.background = "red";
+      bar[end].style.background = "red";
       bar[mid].style.background = "green";
       break;
     } else if (parseFloat(bar[mid].style.height) < targetValue) {
-      bar[start].style.background = "black";
+      bar[start].style.background = "red";
       start = mid + 1;
     } else {
-      bar[end].style.background = "black";
+      bar[end].style.background = "red";
       end = mid - 1;
     }
     await waitforme(delay);
-    bar[mid].style.background = "black";
+    bar[mid].style.background = "red";
   }
 }
 

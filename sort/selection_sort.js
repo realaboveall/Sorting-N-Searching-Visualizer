@@ -2,7 +2,7 @@ async function selectionSort() {
   const bar = document.querySelectorAll(".bar");
   for (let i = 0; i < bar.length; i++) {
     let min_index = i;
-    bar[i].style.background = "blue";
+    bar[i].style.background = "lightgreen";
     for (let j = i + 1; j < bar.length; j++) {
       bar[j].style.background = "cyan";
       await waitforme(delay);

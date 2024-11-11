@@ -8,7 +8,7 @@ async function linearSearch() {
       break;
     }
     await waitforme(delay);
-    bar[i].style.background = "black";
+    bar[i].style.background = "red";
   }
 }
 
