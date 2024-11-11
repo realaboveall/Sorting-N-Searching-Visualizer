@@ -11,6 +11,10 @@ async function insertionSort() {
     while (j >= 0 && parseFloat(bar[j].style.height) > parseFloat(key)) {
       bar[j].style.background = "blue";
       bar[j + 1].style.height = bar[j].style.height;
+      const a = bar[j+1].innerText;
+      const b = bar[j].innerText
+      bar[j+1].innerText =  b;
+      bar[j].innerText = a;
       playNote(300 + array[j] * 2);
       playNote(300 + array[j] * 2);
       j--;

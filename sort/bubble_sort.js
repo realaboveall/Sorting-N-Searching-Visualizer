@@ -2,8 +2,8 @@ async function bubbleSort() {
   const bar = document.querySelectorAll(".bar");
   for (let i = 0; i < bar.length - 1; i++) {
     for (let j = 0; j < bar.length - i - 1; j++) {
-      bar[j].style.background = "lightgreen"; //active bars
-      bar[j + 1].style.background = "lightgreen";
+      bar[j].style.background = "blue";
+      bar[j + 1].style.background = "blue";
       if (
         parseFloat(bar[j].style.height) >= parseFloat(bar[j + 1].style.height)
       ) {
@@ -12,8 +12,8 @@ async function bubbleSort() {
       }
       playNote(300 + array[j] * 2);
       playNote(300 + array[j] * 2);
-      bar[j].style.background = "#F7FBFC";
-      bar[j + 1].style.background = "#F7FBFC";
+      bar[j].style.background = "red";
+      bar[j + 1].style.background = "red";
     }
     bar[bar.length - 1 - i].style.background = "green";
   }
