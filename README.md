@@ -2,7 +2,7 @@
 
 This web application is built using HTML, CSS, and Javascript to visualize classic sorting algorithms. (Yes, we have decided what the classics are😭😭.)
 
-**Live-** [sorting visualizer](https://realaboveall.github.io/) 
+**Live-** [sorting visualizer](https://realaboveall.github.io/Sorting-N-Searching-Visualizer/index.html) 
 
 **Code-** [sort visualizer code]()
 

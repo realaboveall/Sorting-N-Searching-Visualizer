@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-:root {
-  --white-color: #ffffff;
+.dark-theme{
+  --white-color: #000;
   --primary-color: #F7FBFC;
   --secondary-color: #D6E6F2;
   --tertiary-color: #B9D7EA;
-  --text-color: #769FCD;
+  --text-color: #1772db;
   --cell-color:#d6d6d6;
   --ftext-color: #2c3e50;
   --ic-color: #ff5252;
   --shadow-color: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
   --bar-color: #F7FBFC;
 }
-.dark-theme{
-    --primary-color: #7A1CAC;
-    --secondary-color: #AD49E1;
-    --tertiary-color: #7A1CAC;
+:root {
+    --primary-color: #434D50;
+    --secondary-color: #1A1A1D;
+    --tertiary-color: #3B1C32;
     --bg-color: #000000;
     --text-color: #ffffff;
     --cell-color:#EBD3F8;
-    --white-color: #000000;
+    --white-color: #fff;
     --ftext-color: #ffffff;
     --ic-color: #EBD3F8;
     --nvbr-color: #2E073F;
@@ -184,6 +184,7 @@ input[type="range"][orient="vertical"] {
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
+  color: var(--white-color);
 }
 
 .option_text {
@@ -217,7 +218,7 @@ span {
 }
 
 .hed {
-  color: #000000;
+  color: var(--white-color);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: lighter;
   margin-top: 8px;
@@ -234,6 +235,7 @@ span {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  color: var(--white-color);
 }
 
 .algo_name > p {
@@ -259,11 +261,21 @@ span {
 }
 
 .bar {
-  width: 15px;
+  width: 30px;
+  min-height: 20px;
   background-color: var(--bar-color);
   margin: 1px;
   cursor: pointer;
   transition: 0.1s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-inline: 3px;
+
+  & p {
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 }
 
 button {
@@ -299,4 +311,24 @@ footer {
   font-weight: bold;
   color: var(--ic-color);
   font-size: 20px;
+}
+
+.exectime{
+  & p {
+    color: var(--white-color);
+  }
+}
+
+.asimtotic{
+  & p {
+    color: var(--white-color);
+  }
+}
+
+.size{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  
+  
 }

@@ -31,12 +31,12 @@ function playNote(freq) {
   node.connect(audioCtx.destination);
 }
 
-function createArray(n = 30) {
+function createArray(n) {
   clearBar();
   resetTime();
   resetAlgo();
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i <n; i++) {
     array[i] = Math.random() * 130 + 2;
   }
   const bars = document.querySelector(".container");
@@ -46,6 +46,7 @@ function createArray(n = 30) {
     const bar = document.createElement("div");
     bar.style.height = `${array[i] * 2}px`;
     bar.classList.add("bar");
+    bar.innerHTML = `<p>${Math.floor(array[i]*2)}</p>`
     bars.appendChild(bar);
   }
 }
@@ -74,24 +75,24 @@ function waitforme(milisec) {
 
 let size = document.querySelector("#arr_size");
 size.addEventListener("input", function () {
-  createArray(parseInt(size.value));
+  createArray(15);
 });
 
 
-let delay = 260;
+let delay = 1000;
 let delayElement = document.querySelector("#sort_speed");
 delayElement.addEventListener("input", function () {
   delay = 310 - parseInt(delayElement.value);
 });
 
 
-createArray();
+createArray(15);
 
 const newArray = document.querySelector("#new_arr");
 newArray.addEventListener("click", function () {
   enableSort();
   enableSize();
-  createArray(size.value);
+  createArray(15);
 });
 
 function disableSort() {
